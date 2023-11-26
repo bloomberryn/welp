@@ -4,7 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.container {
+.wrapper {
     max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
@@ -12,22 +12,21 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
 }
 
-h1 {
+.question {
     color: #ff69b4; /* Pink text color */
+    margin-bottom: 20px;
 }
 
-.content {
-    margin-top: 20px;
-}
-
-img {
+.gif {
     max-width: 100%;
 }
 
 .buttons {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -38,24 +37,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+    position: relative;
 }
 
-#noButton {
-    animation: shiftAnimation 2s infinite;
-}
-
-#noButton:hover {
+.no-btn {
     animation: none;
-    margin-top: 50px; /* Move away on hover */
-}
-
-#noButton:active {
-    margin-top: 50px; /* Keep the button moved away when pressed */
-}
-
-p {
-    margin-top: 20px;
-    font-weight: bold;
 }
 
 @keyframes shiftAnimation {
